@@ -1,0 +1,6 @@
+{
+    "debug": true,
+    "server": {
+        "address": ":9090"
+    }
+}
