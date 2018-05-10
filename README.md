@@ -2,7 +2,7 @@ I wrote this code to apply the following tutorial: [medium](https://medium.com/@
 
 Except: I didn't generate ssl certificate.
 
-but if you want to generate it you can find this piece of code:
+but if you want to generate it you can find this script:
 ```shell
 #!/usr/bin/env bash
 case `uname -s` in
@@ -23,4 +23,9 @@ openssl req \
         <(printf '[SAN]\nsubjectAltName=DNS:localhost')) \
     -sha256 \
     -days 3650
+```
+
+sample curl request:
+```shell
+curl -Lv --proxy-insecure --proxy https://localhost:9090 http://google.com
 ```

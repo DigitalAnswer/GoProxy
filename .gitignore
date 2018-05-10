@@ -1,1 +1,3 @@
 GoProxy
+*.key
+*.pem
